@@ -39,9 +39,10 @@ main {
     left: 0;
     top: 0;
     z-index: 1;
-    transform: translateX(-300%);
-    transition: 2s linear;
+    transform: translateX(-100%);
+    transition: .5s;
     max-width: 370px;
+    transition-delay: 0.6s;
 }
 .white-nav {
     width: 95%;
@@ -52,7 +53,7 @@ main {
     top: 0;
     z-index: 2;
     transform: translateX(-300%);
-    transition: 1s linear; 
+    transition: 1s ; 
 }
 .red-nav {
     width: 95%;
@@ -60,13 +61,14 @@ main {
     background-color: red;
     z-index: 2;
     position: absolute;
-    transform: translateX(-300%);
-    transition: 2s linear;
+    transform: translateX(-200%);
+    transition: 2s ;
+    transition-delay: 0.3s;
 }
 
  .active {
     transform: translateX(0);
-    transition: 1s linear;
+    transition: .4s linear;
  }
 
  button {
@@ -75,14 +77,15 @@ main {
  }
 
  .black-nav.active .red-nav  {
-    transform: translateX(0);
-    transition: 1.5s linear;
+    transform: translateX(-1%);
+    transition: .8s linear;
     
  }
 
  .black-nav.active .red-nav .white-nav {
     transition: 1s linear;
-    transform: translateX(0);
+    transform: translateX(-2%);
+    
  }
 
  .close {
