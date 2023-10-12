@@ -1,0 +1,118 @@
+.container {
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Muli', sans-serif;
+    
+}
+header {
+    width: 100%;
+    
+    position: relative;
+   
+}
+
+span {
+    cursor: pointer;
+}
+
+.burguer {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.black-nav {
+    width: 80%;
+    height: 100vh;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    transform: translateX(-300%);
+    transition: 2s linear;
+    max-width: 370px;
+}
+.white-nav {
+    width: 95%;
+    height: 100vh;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    transform: translateX(-300%);
+    transition: 1s linear; 
+}
+.red-nav {
+    width: 95%;
+    height: 100vh;
+    background-color: red;
+    z-index: 2;
+    position: absolute;
+    transform: translateX(-300%);
+    transition: 2s linear;
+}
+
+ .active {
+    transform: translateX(0);
+    transition: 1s linear;
+ }
+
+ button {
+    position: absolute;
+    right: 0;
+ }
+
+ .black-nav.active .red-nav  {
+    transform: translateX(0);
+    transition: 1.5s linear;
+    
+ }
+
+ .black-nav.active .red-nav .white-nav {
+    transition: 1s linear;
+    transform: translateX(0);
+ }
+
+ .close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+ }
+
+ .white-nav ul {
+    margin-top: 6rem;
+    padding-left: 2rem;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-right: 2rem;
+    
+ }
+ li {
+    cursor: pointer;
+ }
+ .white-nav ul li:nth-child(n+4) {
+    margin-left: 2rem;
+ }
+ h1 {
+    font-size: 24px;
+ }
+ .logo-menu {
+    position: absolute;
+    left: 20px;
+    top: 15px;
+    width: 40px;
+ }
